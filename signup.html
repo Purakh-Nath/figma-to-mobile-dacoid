@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+          theme: {
+            extend: {
+      fontFamily: {
+        Montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
+      }
+          }
+
+        }  }
+      </script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+  <div class="flex justify-center">
+    <div class="AndroidLarge4 w-[375px] h-[800px] relative bg-neutral-50 rounded-[10px]">
+        <div class="CreateAnAccount left-[16px] top-[68px] absolute text-zinc-800 text-xl font-semibold font-['Roboto']">Create an account</div>
+        <!-- <div class="Rectangle688 w-[343px] h-[50px] left-[16px] top-[135px] absolute bg-zinc-100 rounded-xl"></div>
+        <div class="Rectangle689 w-[343px] h-[50px] left-[16px] top-[209px] absolute bg-zinc-100 rounded-xl"></div>
+        <div class="Rectangle690 w-[343px] h-[50px] left-[16px] top-[283px] absolute bg-zinc-100 rounded-xl"></div>
+        <div class="Rectangle691 w-[343px] h-[50px] left-[16px] top-[357px] absolute bg-zinc-100 rounded-xl"></div> -->
+       
+        <div class="ProceedingIAgreeToAll left-[46px] top-[431px] absolute"><span class="text-zinc-500 text-xs font-medium font-['Montserrat'] leading-snug">By proceeding, I agree to all </span><span class="text-indigo-300 text-xs font-medium font-['Montserrat'] underline leading-snug">T&C</span><span class="text-rose-600 text-xs font-medium font-['Montserrat'] leading-snug"> </span><span class="text-zinc-500 text-xs font-medium font-['Montserrat'] leading-snug">and  </span><span class="text-indigo-300 text-xs font-medium font-['Montserrat'] underline leading-snug">Privacy Policy</span></div> 
+        <div class="Group759132 w-[22px] h-[22px] left-[16px] top-[431px] absolute   ">
+          <input required type="checkbox" class="Rectangle2128 w-[22px] h-[22px] left-0 top-0 absolute rounded border border-zinc-500 text-lg "></input>
+        </div>
+        <form  id="form"  > 
+          <div class="FirstName left-[16px]  w-[343px] h-[50px] absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[135px]">
+          <input required class="w-[343px] h-[50px]  text-lg  p-4  absolute bg-zinc-100 rounded-xl" type="text" id="firstName" name="firstName" placeholder="First Name">
+        </div>
+        <div class="LastName left-[16px]  absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[209px]">
+          <input  class="w-[343px] h-[50px] text-lg  p-4  absolute bg-zinc-100 rounded-xl"   id="lastName" name="lastName" placeholder="Last Name">
+        </div>
+        <label class="Email left-[16px]  absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[283px]">
+          <input   class="w-[343px] h-[50px] text-lg  p-4  absolute bg-zinc-100 rounded-xl" type="email" id="email" name="email" placeholder="Email">
+        </label>
+        <div class="Password  absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[357px] left-[16px]">
+          <input  class="w-[343px] h-[50px] text-xl  p-4 absolute bg-zinc-100 rounded-xl" type="password" id="password" name="password" placeholder="Password">
+        </div>
+        
+        <div class="AlreadyHaveAnAccountLogin left-[90px] top-[756px] absolute"><span class="text-zinc-800 text-xs font-medium font-['Montserrat']">Already have an account? </span><span class="text-indigo-400 text-xs font-medium font-['Montserrat'] underline"><a href="login.html">Login</a></span></div>
+        <div class="Line1 w-[155px] h-[0px] left-[16px] top-[655px] absolute border border-zinc-500"></div>
+        <div class="Line2 w-[157px] h-[0px] left-[202px] top-[655px] absolute border border-zinc-500"></div>
+        <div class="Or left-[181px] top-[646px] absolute text-zinc-800 text-xs font-medium font-['Montserrat']">Or</div>
+        <div class="Rectangle2129 w-11 h-11 left-[134px] top-[686px] absolute rounded-lg border border-zinc-500"></div>
+        <div class="Rectangle2130 w-11 h-11 left-[196px] top-[686px] absolute rounded-lg border border-zinc-500">
+          <img src="Android 8/fb.png" class="FlatColorIconsGoogle w-[18px] h-[18px] left-[147px] top-[699px] m-3 ">
+        </div>
+        <img src="Android 8/flat-color-icons_google.png" class="FlatColorIconsGoogle w-[18px] h-[18px] left-[147px] top-[699px] absolute">
+        <div  class="Rectangle692 w-[343px] h-[50px] left-[16px] top-[574px] absolute bg-gradient-to-l from-indigo-400 to-blue-300 rounded-xl">
+        
+        </div><a href="goals.html">
+        <button   type="button"    class="CreateAnAccount left-[111px] top-[589px] absolute text-center text-white text-base font-semibold font-['Montserrat']">Create an Account</button> </a>  </form>
+        <div class="Status pl-3.5 pr-[14.34px] pt-3 pb-3.5 left-0 top-0 absolute justify-center items-center gap-[226px] inline-flex">
+          <div class="Time w-[54px] text-center text-neutral-800 text-[15px] font-semibold font-['Montserrat']">9:41</div>
+          <div class="StatusBar w-[66.66px] h-[11.67px] relative">
+            <div class="Battery w-[24.33px] h-[11.33px] left-[42.33px] top-0 absolute">
+              <div class="Border w-[22px] h-[11.33px] left-0 top-0 absolute opacity-30 rounded-sm border border-neutral-800"></div>
+              <div class="Capacity w-[18px] h-[7.33px] left-[2px] top-[2px] absolute bg-neutral-800 rounded-sm"></div>
+            </div>
+            <img class="Wifi w-[19.33px] h-[19px] left-[22px] top-0 absolute" src="Android 1/Wifi.png" />
+            <img class="CellularConnection w-[17px] h-[10.67px] left-0 top-[1px] absolute" src="/Android 1/Cellular Connection.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script> 
+</body>
+</html>

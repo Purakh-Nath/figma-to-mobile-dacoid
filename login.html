@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+          theme: {
+            extend: {
+      fontFamily: {
+        Montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
+      }
+          },
+          rules: {
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+        ],
+      },
+    ],
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null,
+  },
+
+        }  }
+      </script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+  <div class="flex justify-center">
+
+    <div class="AndroidLarge5 w-[375px] h-[800px] relative bg-neutral-50 rounded-[10px]">
+        <div class="WelcomeBack left-[16px] top-[68px] absolute text-zinc-800 text-xl font-semibold font-['Roboto']">Welcome Back</div>
+        <label class="Email left-[16px]  absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[120px]">
+          <input   class="w-[343px] h-[50px] text-lg  p-4  absolute bg-zinc-100 rounded-xl" type="email" id="email" name="email" placeholder="Email">
+        </label>
+        <label class="Password  absolute text-zinc-500 text-xs font-semibold font-['Montserrat'] top-[190px] left-[16px]">
+          <input  class="w-[343px] h-[50px] text-xl  p-4 absolute bg-zinc-100 rounded-xl" type="password" id="password" name="password" placeholder="Password">
+        </label>
+       
+        
+        <!-- <div class="Password left-[36px] top-[227px] absolute text-zinc-500 text-xs font-semibold font-['Montserrat']">Password</div> -->
+        <div class="ForgotYourPassword left-[21px] top-[269px] absolute text-zinc-500 text-xs font-medium font-['Montserrat'] underline">Forgot your password?</div>
+        <div class="DonTHaveAnAccountYetCreateAnAccount left-[47px] top-[756px] absolute"><span class="text-zinc-800 text-xs font-medium font-['Montserrat'] underline">Don’t have an account yet? </span><span class="text-indigo-400 text-xs font-medium font-['Montserrat'] underline"> <a href="signup.html">Create an account</a></span></div>
+        <div class="Rectangle692 w-[343px] h-[50px] left-[16px] top-[574px] absolute bg-gradient-to-l from-indigo-400 to-blue-300 rounded-xl"></div>
+        <div class="Line1 w-[155px] h-[0px] left-[16px] top-[655px] absolute border border-zinc-500"></div>
+        <div class="Line2 w-[157px] h-[0px] left-[202px] top-[655px] absolute border border-zinc-500"></div>
+        <div class="Or left-[181px] top-[646px] absolute text-zinc-800 text-xs font-medium font-['Montserrat']">Or</div>
+        <div class="EyeOff w-4 h-4 left-[327px] top-[226px] absolute"></div>
+        <a href="goals.html" class="SignIn left-[158px] top-[589px] absolute text-white text-base font-semibold font-['Montserrat']">Sign In</a>
+        <div class="Rectangle2129 w-11 h-11 left-[134px] top-[686px] absolute rounded-lg border border-zinc-500"></div>
+        <div class="Rectangle2130 w-11 h-11 left-[196px] top-[686px] absolute rounded-lg border border-zinc-500">
+          <img src="Android 8/fb.png" class="FlatColorIconsGoogle w-[18px] h-[18px] left-[147px] top-[699px] m-3 ">
+        </div>
+        <img src="Android 8/flat-color-icons_google.png" class="FlatColorIconsGoogle w-[18px] h-[18px] left-[147px] top-[699px] absolute">
+        <div class="FlatColorIconsGoogle w-[18px] h-[18px] left-[147px] top-[699px] absolute"></div>
+        <div class="Status pl-3.5 pr-[14.34px] pt-3 pb-3.5 left-0 top-0 absolute justify-center items-center gap-[226px] inline-flex">
+          <div class="Time w-[54px] text-center text-neutral-800 text-[15px] font-semibold font-['Montserrat']">9:41</div>
+          <div class="StatusBar w-[66.66px] h-[11.67px] relative">
+            <div class="Battery w-[24.33px] h-[11.33px] left-[42.33px] top-0 absolute">
+              <div class="Border w-[22px] h-[11.33px] left-0 top-0 absolute opacity-30 rounded-sm border border-neutral-800"></div>
+              <div class="Capacity w-[18px] h-[7.33px] left-[2px] top-[2px] absolute bg-neutral-800 rounded-sm"></div>
+            </div>
+            <img class="Wifi w-[19.33px] h-[19px] left-[22px] top-0 absolute" src="Android 1/Wifi.png" />
+            <img class="CellularConnection w-[17px] h-[10.67px] left-0 top-[1px] absolute" src="Android 1/Cellular Connection.png" />
+          </div>
+        </div>
+      </div>   </div>
+      <script src="Script.js"></script> 
+</body>
+</html>

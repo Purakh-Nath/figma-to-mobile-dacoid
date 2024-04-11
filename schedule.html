@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+          theme: {
+            extend: {
+      fontFamily: {
+        Montserrat: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
+      }
+          },
+          rules: {
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+        ],
+      },
+    ],
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null,
+  },
+
+        }  }
+      </script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Schedule</title>
+</head>
+<body>
+    <div class="flex justify-center">
+    <div class="AndroidLarge9 w-[375px] h-[800px] relative bg-neutral-50 rounded-[10px]">
+        <div class="Rectangle4533 w-[189px] h-[30px] left-[100px] top-[367px] absolute bg-gradient-to-l from-purple-300 to-pink-300 rounded-[20px]"></div>
+        <div class="Line14 w-[375px] h-[0px] left-0 top-[712px] absolute border border-zinc-500"></div>
+        <div class="WorkoutSchedule left-[91px] top-[68px] absolute text-center text-zinc-800 text-xl font-semibold font-['Montserrat']">Workout Schedule</div>
+        <div class="Rectangle2132 w-[375px] h-[76px] left-0 top-[724px] absolute bg-white">
+        </div>
+        <div class="Group5 w-[317px] h-[27.22px] left-[29px] top-[746.10px] absolute flex justify-items-center gap-16">
+           
+            <a href="index.html"><img src="Android 8/Vector.png" alt=""></a>
+            <a href="#"><img src="Android 8/Group.png" alt=""></a>
+            <a href="#"><img src="Android 8/Vector (1).png" alt=""></a>
+            <a href="schedule.html"><img src="Android 8/Group (1).png" alt=""></a></div>
+        <button>   <img src="Android 8/Group 1.png" class="Group1 w-[63px] h-[63px] left-[156px] top-[699px] absolute"></button> 
+          <div class="Ellipse1 w-[63px] hidden h-[63px] left-0 top-0 absolute bg-gradient-to-r from-indigo-100 to-indigo-400 rounded-full"></div>
+      
+        <!-- <div class="Group5 w-[322px] h-[27.65px] left-[26px] top-[745.88px] absolute">
+          <div class="Group w-[22.12px] h-[22.12px] left-[299.88px] top-[2.44px] absolute">
+          </div>
+          <div class="Group w-[27.65px] h-[27.65px] left-[65.80px] top-[-0px] absolute">
+          </div>
+        </div> -->
+        <div class="Calendar w-[343px] h-[76.85px] left-[16px] top-[135px] absolute justify-center items-start gap-[7.33px] inline-flex scroll-my-16">
+          <div class="Group626504 w-[62.67px] h-[76.24px] relative">
+            <div class="Rectangle12 w-[62.67px] h-[76.24px] left-0 top-0 absolute bg-white rounded-[9.96px]"></div>
+            <div class="Sun5 w-[26.95px] h-[35.66px] left-[17.52px] top-[6.76px] absolute text-center">
+                <span  id="previousday" class="text-zinc-700 text-xs font-semibold font-['Quicksand']">Sun<br/></span>
+                <span id="previousdate" class="text-zinc-700 text-[28.46px] font-semibold font-['Quicksand'] leading-[17.08px]">5<br/></span></div>
+          </div>
+          <div class="Group626505 w-[63px] h-[74px] relative">
+            <div class="Rectangle12 w-[63px] h-[74px] left-0 top-0 absolute bg-gradient-to-l from-indigo-400 to-violet-200 rounded-[9.96px]"></div>
+            <div class="Mon6 w-[26.95px] h-[35.66px] left-[17.60px] top-[6.38px] absolute text-center">
+                <span id="currentday" class="text-white text-xs font-semibold font-['Quicksand']">Mon<br/></span>
+                <span id="currentdate" class="text-white text-[28.46px] font-semibold font-['Quicksand'] leading-[17.08px]">6 <br/>
+            </span>
+            </div>
+          </div>
+          <div class="Group626506 w-[62.67px] h-[76.24px] relative">
+            <div class="Rectangle12 w-[62.67px] h-[76.24px] left-0 top-0 absolute bg-white rounded-[9.96px]"></div>
+            <div class="Tue7 w-[26.95px] h-[35.66px] left-[17.52px] top-[6.76px] absolute text-center">
+                <span  id="currentday2" class="text-zinc-700 text-xs font-semibold font-['Quicksand']">Tue<br/>
+                </span>
+                <span id="currentdate2" class="text-zinc-700 text-[28.46px] font-semibold font-['Quicksand'] leading-[17.08px]">7<br/>
+                </span></div>
+            <!-- <div class="BoundingBox w-[8.76px] h-2 left-[6.74px] top-[62.10px] absolute bg-zinc-300"></div> -->
+          </div>
+          <div class="Group626508 w-[62.67px] h-[76.24px] relative">
+            <div class="Rectangle12 w-[62.67px] h-[76.24px] left-0 top-0 absolute bg-white rounded-[9.96px]"></div>
+            <div class="Wed8 w-[26.95px] h-[35.66px] left-[17.52px] top-[6.76px] absolute text-center">
+                <span id="currentday3"  class="text-zinc-700 text-xs font-semibold font-['Quicksand']">Wed<br/></span>
+                <span id="currentdate3" class="text-zinc-700 text-[28.46px] font-semibold font-['Quicksand'] leading-[17.08px]">8<br/>
+                </span></div>
+          </div>
+          <div class="Group626507 w-[62.67px] h-[76.24px] relative">
+            <div class="Rectangle12 w-[62.67px] h-[76.24px] left-0 top-0 absolute bg-white rounded-[9.96px]"></div>
+            <div class="Thu9 w-[26.95px] h-[35.66px] left-[17.52px] top-[6.76px] absolute text-center">
+                <span id="currentday4" class="text-zinc-700 text-xs font-semibold font-['Quicksand']">Thu<br/></span>
+                <span id="currentdate4" class="text-zinc-700 text-[28.46px] font-semibold font-['Quicksand'] leading-[17.08px]">9<br/></span></div>
+          </div>
+        </div>
+     
+        <div id="currentmonthyear" class="Feb2024 left-[159px] top-[106px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">
+            Feb 2024
+            <div class="flex  gap-x-32 mb-2 "> 
+                
+                <button><img src="Android 8/VectorRight.png" alt="Left Arrow" class=""></button>
+                    <button><img src="Android 8/VectorLeft.png" alt="Right Arrow" class=""></button> </div>
+          </div>
+        <div class="Line3 w-[375px] h-[0px] left-0 top-[279px] absolute border border-zinc-500"></div>
+        <div class="Line4 w-[375px] h-[0px] left-0 top-[317px] absolute border border-zinc-500"></div>
+        <div class="Line5 w-[375px] h-[0px] left-0 top-[352px] absolute border border-zinc-500"></div>
+        <div class="Line6 w-[375px] h-[0px] left-0 top-[392px] absolute border border-zinc-500"></div>
+        <div class="Line7 w-[375px] h-[0px] left-0 top-[432px] absolute border border-zinc-500"></div>
+        <div class="Line8 w-[375px] h-[0px] left-0 top-[472px] absolute border border-zinc-500"></div>
+        <div class="Line9 w-[375px] h-[0px] left-0 top-[512px] absolute border border-zinc-500"></div>
+        <div class="Line10 w-[375px] h-[0px] left-0 top-[552px] absolute border border-zinc-500"></div>
+        <div class="Line11 w-[375px] h-[0px] left-0 top-[592px] absolute border border-zinc-500"></div>
+        <div class="Line12 w-[375px] h-[0px] left-0 top-[632px] absolute border border-zinc-500"></div>
+        <div class="Line13 w-[375px] h-[0px] left-0 top-[672px] absolute border border-zinc-500"></div>
+      
+        <div class="00Am left-[16px] top-[250px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">06:00 AM</div>
+        <div class="00Am left-[16px] top-[288px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">07:00 AM</div>
+        <div class="00Am left-[16px] top-[326px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">08:00 AM</div>
+        <div class="00Am left-[16px] top-[367px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">09:00 AM</div>
+        <div class="00Am left-[17px] top-[406px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">10:00 AM</div>
+        <div class="createtask left-[19px] top-[444px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">11:00 AM</div>
+        <div class="00Am left-[18px] top-[484px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">12:00 AM</div>
+        <div class="00Am left-[17px] top-[523px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">01:00 AM</div>
+        <div class="00Am left-[16px] top-[561px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">02:00 AM</div>
+        <div id="parent">
+        <div class=" left-[16px] top-[605px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">03:00 AM</div>
+      
+        <div class="00Am left-[15px] top-[643px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">04:00 AM</div>
+        <div class="time-slot left-[16px] top-[687px] absolute text-center text-zinc-800 text-xs font-semibold font-['Montserrat']">05:00 AM</div>  </div>
+        <div class="Rectangle4532 w-[149px] h-[30px] left-[211px] top-[300px] absolute bg-gradient-to-l from-purple-300 to-pink-300 rounded-[20px]"></div>
+        <div class="AbWorkout730am w-[129px] left-[221px] top-[307px] absolute text-white text-xs font-semibold font-['Montserrat']">Ab Workout, 7:30am</div>
+        <div class="UpperbodyWorkout9am w-[165px] left-[112px] top-[374px] absolute text-white text-xs font-semibold font-['Montserrat']">Upperbody Workout, 9am</div>
+        <div class="Line15 w-[307px] h-[0px] left-[7px] top-[392px] absolute border border-blue-500"></div>
+        <div class="Rectangle4534 w-[185px] h-2.5 left-[104px] top-[392px] absolute bg-neutral-50"></div>
+        <div class="Ellipse56 w-1.5 h-1.5 left-[4px] top-[389px] absolute bg-blue-500 rounded-full"></div>
+        <div class="Rectangle4535 w-[173px] h-[30px] left-[101px] top-[554px] absolute bg-zinc-100 rounded-[20px]"></div>
+        <div class="LowerbodyWorkout3pm left-[109px] top-[561px] absolute text-zinc-800 text-xs font-semibold font-['Montserrat']">Lowerbody Workout, 3pm</div>
+        
+        <button id="create">
+        <div class="Ellipse1 w-[63px] h-[63px] left-[296px] top-[602px] absolute bg-gradient-to-r from-pink-300 to-purple-300 rounded-full"></div>
+        <div class=" left-[317px] top-[612px] absolute text-white text-4xl font-normal font-['Montserrat']">+</div>   </button>
+        <a href="track.html">
+        <img src="Android 8/chevron-left.png" class="ChevronLeft w-8 h-8 pl-2 pr-[7px] py-1.5 left-[16px] top-[70px] absolute bg-zinc-100 rounded-[3px] justify-center items-center inline-flex"></img> </a>
+        <div class="Status pl-3.5 pr-[14.34px] pt-3 pb-3.5 left-0 top-0 absolute justify-center items-center gap-[226px] inline-flex">
+          <div class="Time w-[54px] text-center text-neutral-800 text-[15px] font-semibold font-['Montserrat']">9:41</div>
+          <div class="StatusBar w-[66.66px] h-[11.67px] relative">
+            <div class="Battery w-[24.33px] h-[11.33px] left-[42.33px] top-0 absolute">
+              <div class="Border w-[22px] h-[11.33px] left-0 top-0 absolute opacity-30 rounded-sm border border-neutral-800"></div>
+              <div class="Capacity w-[18px] h-[7.33px] left-[2px] top-[2px] absolute bg-neutral-800 rounded-sm"></div>
+            </div>
+            <img class="Wifi w-[19.33px] h-[19px] left-[22px] top-0 absolute" src="Android 1/Wifi.png" />
+            <img class="CellularConnection w-[17px] h-[10.67px] left-0 top-[1px] absolute" src="Android 1/Cellular Connection.png" />
+          </div>
+        </div>
+      
+      </div>    </div>
+      <script src="Script.js"></script> 
+</body>
+</html>
